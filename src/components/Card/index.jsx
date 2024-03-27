@@ -46,3 +46,46 @@ export const CardBackground = ({ bgImg, children,width}) => {
         </div>
     );
 };
+// experts array
+const experts = [
+    {
+        id:1,
+        imgSrc:'/brendon.png',
+        name:'Brendon M',
+        position:'CEO & Founder'
+    },
+    {
+        id:2,
+        imgSrc:'/jodi.png',
+        name:'Jodi J. Appleby',
+        position:'Real Estate Developer'
+    },
+    {
+        id:3,
+        imgSrc:'/justin.png',
+        name:'Justin S. Meza',
+        position:'Listing Agent'
+    },
+    {
+        id:4,
+        imgSrc:'/smith.png',
+        name:'Susan T. Smith',
+        position:"Buyer's Agent"
+    }
+]
+// we create a compoents and pass props for our experts 
+export const Expert = ({img,name,position})=>{
+    return (
+        <>
+          <div>
+                <img src={img} />
+                <h3 className="text-[#0B090A] pt-[30px]font-normal font-[poppins] text-[27px]">{name}</h3>
+                <p  className="text-[#4361EE] pt-[50px] font-medium font-[poppins] text-[16px]">{position}</p>
+            </div>
+        </>
+    )
+}
+//we map and create a variable to store it then use our array as the value of our props 
+export const mappedExpert = experts.map(({imgSrc,name,position,id})=>{
+    return <Expert img={imgSrc} name={name} position={position} key={id} />
+})

@@ -2,7 +2,14 @@ import Nav from "../../components/NavBar";
 import Carousel from "../../components/carosel";
 import CardOne from "../../components/Card";
 import { CardTwo,CardBackground } from "../../components/Card";
+import Blog from "../../components/Blogs/blog";
+import { Testimonials } from "../../components/Blogs/blog";
+import { Agents } from "../../components/Blogs/blog";
+// import { Expert } from "../../components/Card";
+import { mappedExpert } from "../../components/Card";
+import Footer from "../../components/Footer";
 const Home = ()=>{
+    console.log(mappedExpert)
     return (
     <>
        <div className="homeWrapper">
@@ -16,8 +23,8 @@ const Home = ()=>{
                 </div>
             </div>
             <Nav/>
-            <div className="relative heroSection flex flex-row bg-gradient-to-b from-[4CC9F000] to-[#4361EE70] pb-[127px]">
-                <div className="flex flex-col ml-[160px] mt-[89px] mr-[160px]">
+            <div className="relative heroSection flex flex-row bg-gradient-to-b from-[4CC9F000] to-[#dbdbdb70]  pb-[127px]">
+                <div className="flex flex-col ml-[160px] mt-[150px] mr-[160px]">
                    <p className="text-[#4361EE] text-[19.4px] font-medium tracking-wider">REAL ESTATE</p>
                    <h4 className="text-[#0B090A] text-[57.3px] font-bold leading-none">Find a perfect home <br /> you love..!</h4>
                    <p className='text-[#64748B] text-[16px] pt-[30px]'>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum.<br/> Integer a dolor eu sapien sodales vulputate ac in purus.</p>
@@ -51,7 +58,7 @@ const Home = ()=>{
                 </div>
             </div>
             <div className="services bg-white 100vh ">
-                <div className="flex flex-row item-center justify-center absolute top-[54rem] left-[15rem] ">
+                <div className="flex flex-row item-center justify-center absolute top-[50rem] left-[15rem] ">
                     <img className="" src="/absolute (2).png" alt="" srcset="" />
                     <img className="" src="/absolute (1).png" alt="" srcset="" />
                 </div>
@@ -169,6 +176,21 @@ const Home = ()=>{
                         </CardBackground>
                 </div>
             </div>
+            <div className="flex flex-col  bg-white  pt-[210px] px-[200px]">
+                <div className="ml-[50rem]"><img className="h-[100px] w-[100px]" src="/rounded (1).png" alt="" srcset="" /></div>
+                <p className="text-[#4361EE] text-[19.4px] text-center font-poppins font-medium uppercase tracking-wider">Introduce yourself to  </p>
+                <p className="text-[#2B2B2B] text-[39.4px] pb-[100px] text-center  font-poppins font-semibold" >Our Team of Experts</p>
+                <div className="flex flex-row items-center justify-between pt-100px pb-[180px]">
+                   {/* <Expert img='/brendon.png' name='Susan T. Smith' position="Buyer's Agent" />
+                    */}
+                    {/* we call our mapped variable here */}
+                    {mappedExpert}
+                </div>
+            </div>
+            <div><Blog /></div>
+            <div><Testimonials /></div>
+            <div> <Agents/></div>
+            <Footer />
        </div>
     </>
     )
