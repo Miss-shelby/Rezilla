@@ -1,0 +1,14 @@
+@keyframes slideRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .sliding-div {
+    background-color: #03AEFD;
+    animation: slideRight 20s linear infinite; /* Adjust duration and timing function as needed */
+  }
+  

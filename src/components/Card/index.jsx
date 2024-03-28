@@ -1,4 +1,4 @@
-const CardOne = ({bgImg,btn,price,location,locationTwo,img1,img2,bed,bath})=>{
+const CardOne = ({bgImg,btn,price,location,locationTwo,img1,img2,bed,bath,children})=>{
     return (
         <>
           <div className="flex flex-col ">
@@ -6,7 +6,7 @@ const CardOne = ({bgImg,btn,price,location,locationTwo,img1,img2,bed,bath})=>{
                 className="w-[340px] h-[340px] rounded-3xl  bg-center bg-no-repeat bg-cover mt-[30px]"
                 style={{
                 backgroundImage: `url(${bgImg})`
-                }}/>
+                }}> {children}</div>
                  <p className="text-[27px] font-normal font-[poppins] text-[#2B2B2B] pt-[20px]">{price}</p>
                  <p className="text-[19px] font-medium font-[poppins] text-[#2B2B2B] py-[7px]">{location}</p>
                  <p className="text-[16px] font-normal font-[poppins] text-[#64748B] "> {locationTwo}</p>
@@ -14,6 +14,7 @@ const CardOne = ({bgImg,btn,price,location,locationTwo,img1,img2,bed,bath})=>{
                     <p className="flex flex-row items-center mr-[70px] pt-[5px]"> <img src={img1} alt="" srcset="" /> <span className="text-[#2B2B2B]  ml-[10px] font-normal font-[poppins]">{bed}</span></p>
                     <p className="flex flex-row items-center"> <img src={img2} alt="" srcset="" /> <span  className="text-[#2B2B2B] ml-[10px] font-normal font-[poppins]">{bath}</span></p>
                  </div>
+                 
             </div> 
       </>
     )

@@ -72,8 +72,8 @@ export const Testimonials = ()=>{
                 </div>
             </div>
             <div className=" ml-[170px] flex flex-row ">
-                <div className="relative flex flex-col px-[50px] pt-[34px] mr-[30px] z-10  bg-white shadow-2xl rounded-2xl shadow-lg ">
-                    <img className="absolute z-0 left-[-10px] top-[-20px] h-[50px] w-[50px]" src="/rounded (1).png" />
+                <div className="relative flex flex-col px-[50px] pt-[34px] mr-[30px] z-30  bg-white shadow-2xl rounded-2xl  ">
+                    <img className="absolute  left-[-10px] top-[-20px] h-[50px] w-[50px]" src="/rounded (1).png" />
                     <img className="w-[60px]  h-[26px]" src="/comment.png" alt="" srcset="" />
                     <p className="text-[#2B2B2B] w-[380px] font-[poppins] text-[17.4px] pt-[18px] pb-[30px] ">I highly recommend Jodi J. Appleby. She was attentive to our
                         needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!</p>

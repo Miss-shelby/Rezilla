@@ -47,6 +47,7 @@ const Footer = ()=>{
         </footer>
 
        <FooterTwo />
+       
         </div>
         </>
     )
@@ -55,14 +56,16 @@ export default Footer
 export const FooterTwo=()=>{
     return (
         <>
-        <div className="bg-[#0B090A] h-[50px] flex flex-row items-center justify-between px-[160px] text-[#AAAAAA] text-[15px] ">
-            <p>© Rezilla – All rights reserved</p>
-            <div className="flex flex-row ">
-                <p>Terms and Conditions</p>
-                <p className="px-[40px]">Privacy Policy</p>
-                <p>Disclaimer</p>
+       <div className="bg-[#0B090A] h-[50px] w-full ">
+        <div className="bg-[#0B090A] h-[50px] w-full flex flex-row items-center justify-between px-[160px] text-[#AAAAAA] text-[15px] sliding-div">
+                <p>© Rezilla – All rights reserved</p>
+                <div className="flex flex-row ">
+                    <p>Terms and Conditions</p>
+                    <p className="px-[40px]">Privacy Policy</p>
+                    <p>Disclaimer</p>
+                </div>
             </div>
-        </div>
+       </div>
         </>
     )
 }

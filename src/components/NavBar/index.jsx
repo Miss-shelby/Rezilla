@@ -27,23 +27,16 @@ const Nav = ()=>{
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li className="flex flex-row ">
-        <div className='rounded-full bg-[#03AEFD] flex flex-col items-center justify-center  h-[40px] w-[40px]'>
-            <img className=" w-full" src="/homeicon.png" alt="" srcset="" /></div><a className="text-[#1E1E1E] text-[20px]">Rezilla</a></li>
-      {/* <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
+      <li className="flex flex-row items-center ">
+      <div className="flex flex-row items-center">
+                    <div className="flex flex-col bg-[#03AEFD] justify-center mr-[10px] items-center h-[40px] w-[40px] rounded-full"><img src="/homeicon.png" alt="" srcset="" /></div>
+                    <h6 className="footer-title text-[19.4px] text-[#1E1E1E]">  Rezilla</h6> 
+                </div>
       </li>
-      <li><a>Item 3</a></li> */}
     </ul>
   </div>
   <div className="navbar-end">
-    <p><img src="" alt="" srcset="" /><span className="text-[#2B2B2B] text-[16px] text-base-500 mr-[20px]">Login/Register</span></p>
+    <p className="flex flex-row items-center"><img src="/profile (2).png" alt="" srcset="" /><span className="text-[#2B2B2B] text-[16px] text-base-500 mr-[20px] ml-[10px]">Login/Register</span></p>
     <a className=" bg-[#03AEFD] text-white flex flex-row items-center text-[16px] py-[10.5px] px-[26px] rounded-3xl"> <img src="/homeicon.png" alt="" srcset="" /><span className="ml-[8px]">Add Listing</span></a>
   </div>
 </div>

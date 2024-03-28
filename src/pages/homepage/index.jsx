@@ -8,31 +8,37 @@ import { Agents } from "../../components/Blogs/blog";
 // import { Expert } from "../../components/Card";
 import { mappedExpert } from "../../components/Card";
 import Footer from "../../components/Footer";
+
 const Home = ()=>{
     console.log(mappedExpert)
     return (
     <>
        <div className="homeWrapper">
-            <div className='bg-[#03AEFD] text-[13.3px] h-[40px] sm:flex justify-between items-center fixed top-0 z-50 w-full text-white px-[100px] hidden'>
-                <div>
-                    <p>Rezilla, 18 Grattan St, Brooklyn</p>
-                </div>
-                <div className="flex">
-                    <p className="pr-[30px]"> <img src="" alt="" srcset="" /><span>+1 206-214-2298</span></p>
-                    <p><img src="" alt="" srcset="" /><span>support@rezilla.com</span></p>
+            <div className="parent-div bg-[#03AEFD] h-[40px] fixed top-0 z-50 w-full">
+                <div className='bg-[#03AEFD] py-3 text-[13.3px] h-[40px] sm:flex justify-between items-center  text-white px-[100px] hidden sliding-div'>
+                    <div className="flex flex-row items-center">
+                        <img src="/locationicon (1).png" alt="" srcSet="" />
+                        <p className="pl-3">Rezilla, 18 Grattan St, Brooklyn</p>
+                    </div>
+                    <div className="flex">
+                        <p className="pr-3 flex flex-row items-center"> <img src="mailnav (2).png" alt="" srcSet="" /><span className="pl-3">+1 206-214-2298</span></p>
+                        <p className="flex flex-row items-center"><img src="mailnav (1).png" alt="" srcSet="" /><span className="pl-3">support@rezilla.com</span></p>
+                    </div>
                 </div>
             </div>
+
             <Nav/>
-            <div className="relative heroSection flex flex-row bg-gradient-to-b from-[4CC9F000] to-[#dbdbdb70]  pb-[127px]">
-                <div className="flex flex-col ml-[160px] mt-[150px] mr-[160px]">
+            <div className="relative heroSection px-[100px] flex flex-row justify-between pt-[150px]  bg-gray-400  pb-[127px]">
+                <div className="flex flex-col border-green-500 ">
                    <p className="text-[#4361EE] text-[19.4px] font-medium tracking-wider">REAL ESTATE</p>
                    <h4 className="text-[#0B090A] text-[57.3px] font-bold leading-none">Find a perfect home <br /> you love..!</h4>
                    <p className='text-[#64748B] text-[16px] pt-[30px]'>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum.<br/> Integer a dolor eu sapien sodales vulputate ac in purus.</p>
+                   <img className="h-[50px] w-[50px] absolute top-[24rem] left-[37rem]" src="/rounded (1).png" alt="" srcset="" />
                    <Carousel/>
                 </div>
-                <div className=" w-[420px]  bg-white mt-[124px] rounded-[20px] ">
+                <div className=" w-[420px]  bg-white rounded-[20px] ">
                     <div className="flex flex-row justify-between border-b border-[#AAA] w-full ">
-                        <p className=" font-medium text-[#03AEFD] text-[16px] border-b-2 px-[30px] border-solid border-[#03AEFD] pt-[40px] pb-[29px] ml-[82px]">For Sale</p>
+                        <p className=" font-medium text-[#03AEFD] ml-[50px] text-[16px] border-b-2 px-[30px] border-solid border-[#03AEFD] pt-[40px] pb-[29px]">For Sale</p>
                         <p className=" pt-[40px] font-medium pb-[29px] pr-[82px]">For Rent</p>
                     </div>
                     <form className="flex flex-col items-center justify-center">
@@ -72,6 +78,7 @@ const Home = ()=>{
                     <img  className='mix-blend-luminosity'src="/rounded (4).png" alt="" srcset="" />
                     <img className='mix-blend-luminosity' src="/rounded (5).png" alt="" srcset="" />
                     <img className='mix-blend-luminosity' src="/rounded (6).png" alt="" srcset="" />
+                    <img className='mix-blend-luminosity' src="/netflix.png" alt="" srcset="" />
                 </div>
             </div>
             <div className='flex bg-white justify-center items-center px-[160px] relative'>
@@ -80,14 +87,14 @@ const Home = ()=>{
                     <h4 className='w-[500px] font-bold text-[39px] text-[#2B2B2B] leading-none'>Assisting individuals in locating the appropriate real estate.</h4>
                     <p className='text-[#64748B] text-[16px] w-[500px] pt-[30px] pb-[30px]'>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. Nulla convallis ipsum molestie nibh malesuada, ac malesuada leo volutpat.</p>
                     <div className='flex flex-row items-center w-[400px] h-[131px] rounded-[30px] p-[30px] shadow-2xl shadow-white-900/40'>
-                        <img src='/icon _user octagon_.png' />
+                        <img src='/iconone.png' />
                         <div className='ml-[15px]'>
                             <p className='text-[#4361EE] text-[19px] font-medium'>Donec porttitor euismod</p>
                             <p className='text-[#64748B] text[16px]'>Nullam a lacinia ipsum, nec <span className='block'>dignissim purus. Nulla</span></p>
                         </div>
                     </div>
                     <div className='flex flex-row items-center w-[400px] h-[131px] rounded-[30px] p-[30px] mt-[30px] shadow-2xl bg-white shadow-white-900/40'>
-                        <img src='/🦆icon _user octagon_.png' />
+                        <img src='/icontwo.png' />
                         <div className='ml-[15px]'>
                             <p className='text-[#4361EE] text-[19px] font-medium'>Donec porttitor euismod</p>
                             <p className='text-[#64748B] text[16px]'>Nullam a lacinia ipsum, nec <span className='block'>dignissim purus. Nulla</span></p>
@@ -95,13 +102,20 @@ const Home = ()=>{
                     </div>
                 </div>
                 <div className='image1 flex flex-row  '>
-                    <div className='image1 w-full h-full '>
-                        <img  src='/Rectangle 14 (1).png' />
+                    <div className='image1  '>
+                    {/* <div
+                        style={{
+                            backgroundImage: 'url("/bgimageone.png")',
+                            backgroundSize: 'cover', // Adjust as needed
+                            backgroundRepeat: 'no-repeat', // Adjust as needed
+                        }}></div> */}
+                       <div className=' h-[500px] w-[280px] mt-[70px]'><img className="object-cover h-full w-full"  src='/bgimageone.png' /> </div>
                         <img className='absolute bottom-[75%] right-[25%] h-[205px] w-[206px]' src='/round-text.png'/>
                     </div>
                     <div className='flex flex-col mt-[30px]'>
-                        <img  src='/Rectangle 15 (1).png' />
-                        <img  src='/Rectangle 16 (1).png' />
+                        <div className="w-[277px] h-[280px]"><img className="object-cover h-full w-full" src='/Rectangle 15 (1).png' /> </div>
+                        <div className="h-[180px] w-[277px] flex items-center justify-center">
+                            <img  className="object-cover h-full w-full"   src='/Rectangle 16 (1).png' /></div>
                     </div>
                 </div>
             </div>
@@ -118,21 +132,21 @@ const Home = ()=>{
                     <button className="btn btn-outline hover:bg-transparent border-[#03AEFD] text-[#03AEFD] rounded-[20px] px-[25px]">Rent</button>
                     </div>
                 </div>
-                <div className="flex flex-row pb-[199px]">
+                <div className="flex flex-row pb-[199px] items-center justify-center">
                     <CardOne bgImg="/house1.png" price='$ 5,970' 
                     location='Tranquil Haven in the Woods' locationTwo='103 Wright CourtBurien, WA 98168'
                     img1='bed.png' bed='4 beds' img2='bath.png' bath='3 baths'
-                     />
+                     > <img className="mt-[260px] ml-[30px]" src='/Popular.png' /></CardOne>
                     <div className="mx-[50px]">
                         <CardOne bgImg="/house2.png" price='$ 1,970' 
                         location='Serene Retreat by the Lake' locationTwo='1964 Jehovah Drive, VA 22408'
                         img1='bed.png' bed='3 beds' img2='bath.png' bath='2 baths'
-                        />
+                        > <img className="mt-[268px] ml-[30px]" src='/Popular (1).png' /></CardOne>
                     </div>
                      <CardOne bgImg="/house3.png" price='$ 3,450' 
                     location='Charming Cottage in the Meadow' locationTwo='1508 Centennial Farm RoadHarlan, 51537'
                     img1='bed.png' bed='4 beds' img2='bath.png' bath='4 baths'
-                     />
+                     ><img className="mt-[268px] ml-[30px]" src='/Popular (2).png' /></CardOne>
                 </div>
             </div>
             <div className="bg-[#D4D4D4] flex flex-col items-center justify-center">
@@ -153,7 +167,7 @@ const Home = ()=>{
                 <img className="height-[50px] w-[50px] mx-auto pt-[61px]" src='/rounded (1).png' />
                 <p className="text-[#4361EE] pl-[160px] font-medium text-[19.4px] tracking-wider font-[poppins] pt-[80px]"> AREAS ACROSS THE TOWN</p>
                 <p className="text-[#585656] pl-[160px] font-semi-bold text-[39.9px]  font-[poppins] pt-[20px] pb-[80px]">Neighborhood Properties</p>
-                <div className="flex flex-row justify-center flex-wrap">
+                <div className="flex flex-row justify-center flex-wrap px-[100px]">
                         <CardBackground bgImg="/ny.png" width='300px'>
                             <p className="font-[poppins] text-[57.3px] text-[#FFFFFF55] pl-[50px] pt-[156px]">216
                             <span className='text-[19.4px] block text-white'>New York City, NY</span></p>
