@@ -9,6 +9,7 @@
   
   .sliding-div {
     background-color: #03AEFD;
-    animation: slideRight 20s linear infinite; /* Adjust duration and timing function as needed */
+    animation: slideRight 20s linear infinite;
+    overflow: hidden; 
   }
   

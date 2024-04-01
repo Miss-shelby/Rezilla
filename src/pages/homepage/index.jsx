@@ -28,7 +28,7 @@ const Home = ()=>{
             </div>
 
             <Nav/>
-            <div className="relative heroSection px-[100px] flex flex-row justify-between pt-[150px]  bg-gray-400  pb-[127px]">
+            <div className="relative heroSection px-[100px] flex flex-row justify-between pt-[150px]  bg-gradient-to-b from-[4361EE00]  to-[4361EE70] pb-[127px]">
                 <div className="flex flex-col border-green-500 ">
                    <p className="text-[#4361EE] text-[19.4px] font-medium tracking-wider">REAL ESTATE</p>
                    <h4 className="text-[#0B090A] text-[57.3px] font-bold leading-none">Find a perfect home <br /> you love..!</h4>

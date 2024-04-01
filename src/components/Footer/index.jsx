@@ -2,7 +2,7 @@ const Footer = ()=>{
     return (
         <>
         <div>  
-        <footer className="footer  bg-gray-300 text-[#808080] px-[140px] pb-[105px]">
+        <footer className="footer flex flex-row   bg-gray-300 text-[#808080] justify-between px-[140px]  pb-[105px]">
             <nav className=" text-[#2B2B2B] mt-[82px]">
                 <div className="flex flex-row items-center">
                     <div className="flex flex-col bg-[#03AEFD] justify-center mr-[10px] items-center h-[50px] w-[50px] rounded-full"><img src="/homeicon.png" alt="" srcset="" /></div>
@@ -56,7 +56,7 @@ export default Footer
 export const FooterTwo=()=>{
     return (
         <>
-       <div className="bg-[#0B090A] h-[50px] w-full ">
+       <div className="bg-[#0B090A] h-[50px] w-full overflow-hidden ">
         <div className="bg-[#0B090A] h-[50px] w-full flex flex-row items-center justify-between px-[160px] text-[#AAAAAA] text-[15px] sliding-div">
                 <p>© Rezilla – All rights reserved</p>
                 <div className="flex flex-row ">
