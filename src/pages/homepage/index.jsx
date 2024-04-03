@@ -14,7 +14,7 @@ const Home = ()=>{
     return (
     <>
        <div className="homeWrapper">
-            <div className="parent-div bg-[#03AEFD] h-[40px] fixed top-0 z-50 w-full">
+            <div className="parent-div bg-[#03AEFD] hidden sm:block lg:block md:block h-[40px] fixed top-0 z-50 w-full">
                 <div className='bg-[#03AEFD] py-3 text-[13.3px] h-[40px] sm:flex justify-between items-center  text-white px-[100px] hidden sliding-div'>
                     <div className="flex flex-row items-center">
                         <img src="/locationicon (1).png" alt="" srcSet="" />
@@ -28,20 +28,20 @@ const Home = ()=>{
             </div>
 
             <Nav/>
-            <div className="relative heroSection px-[100px] flex flex-row justify-between pt-[150px]  bg-gradient-to-b from-[4361EE00]  to-[4361EE70] pb-[127px]">
-                <div className="flex flex-col border-green-500 ">
-                   <p className="text-[#4361EE] text-[19.4px] font-medium tracking-wider">REAL ESTATE</p>
-                   <h4 className="text-[#0B090A] text-[57.3px] font-bold leading-none">Find a perfect home <br /> you love..!</h4>
-                   <p className='text-[#64748B] text-[16px] pt-[30px]'>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum.<br/> Integer a dolor eu sapien sodales vulputate ac in purus.</p>
-                   <img className="h-[50px] w-[50px] absolute top-[24rem] left-[37rem]" src="/rounded (1).png" alt="" srcset="" />
+            <div className="relative heroSection w-full bg-red-500 sm:px-[100px] flex flex-col items-center justify-center sm:flex-row md:flex-row lg:flex-row sm:justify-between lg:justify-between pt-[150px]  bg-gradient-to-b from-[4361EE00]  to-[4361EE70] pb-[127px]">
+                <div className="flex flex-col items-center sm:items-start   border-green-500 ">
+                   <p className="text-[#4361EE] text-[16px] sm:text-[19.4px] font-medium tracking-wider">REAL ESTATE</p>
+                   <h4 className="text-[#0B090A]text-[42px] sm:text-[57.3px] font-bold leading-none">Find a perfect home <br /> you love..!</h4>
+                   <p className='text-[#64748B]text-[13.3px] sm:text-[16px] pt-[30px]'>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum.<br/> Integer a dolor eu sapien sodales vulputate ac in purus.</p>
+                   <img className="h-[50px] w-[50px] absolute bottom-[0rem] sm:top-[24rem] sm:left-[37rem]" src="/rounded (1).png" alt="" srcset="" />
                    <Carousel/>
                 </div>
-                <div className=" w-[420px]  bg-white rounded-[20px] ">
+                <div className=" bg-white rounded-[20px] sm:mt-[0px] mt-[30px] w-[333px] sm:w-[420px] pb-[60px]">
                     <div className="flex flex-row justify-between border-b border-[#AAA] w-full ">
                         <p className=" font-medium text-[#03AEFD] ml-[50px] text-[16px] border-b-2 px-[30px] border-solid border-[#03AEFD] pt-[40px] pb-[29px]">For Sale</p>
                         <p className=" pt-[40px] font-medium pb-[29px] pr-[82px]">For Rent</p>
                     </div>
-                    <form className="flex flex-col items-center justify-center">
+                    <form className="flex flex-col items-center justify-center ">
                             <input type="text" placeholder="New York, San Francisco, etc" className=" mt-[30px] input input-ghost rounded-[20px] w-full max-w-xs" />
                             <select className="select select-ghost w-full max-w-xs  mt-[30px] rounded-[20px]">
                                 <option disabled selected >Select Property Type</option>
@@ -64,15 +64,15 @@ const Home = ()=>{
                 </div>
             </div>
             <div className="services bg-white 100vh ">
-                <div className="flex flex-row item-center justify-center absolute top-[50rem] left-[15rem] ">
+                <div className="hidden sm:flex  bg-pink-400 sm:flex-row item-center justify-center absolute  sm:top-[50rem] sm:left-[15rem] ">
                     <img className="" src="/absolute (2).png" alt="" srcset="" />
                     <img className="" src="/absolute (1).png" alt="" srcset="" />
                 </div>
-                <div className="flex flex-row items-center pt-[110px]">
-                    <img className='ml-[169px] mr-[230px]' src="public\rounded (1).png" alt="" srcset="" />
+                <div className="flex sm:flex-row flex-col col-reverse   items-center pt-[110px]">
+                    <img className='ml-[169px] mr-[230px] hidden sm:block md:block' src="public\rounded (1).png" alt="" srcset="" />
                     <p className='text-center'>Trusted by 100+ Companies across the globe!  </p>
                 </div>
-                <div className="flex flex-row items-center justify-between px-[140px] pt-[24px] pb-[228px]">
+                <div className="flex flex-row flex-wrap px-[30px]  sm:items-center justify-between sm:px-[140px] pt-[24px] pb-[228px]">
                     <img className='mix-blend-luminosity' src="/rounded (2).png" alt="" srcset="" />
                     <img className='mix-blend-luminosity'  src="/rounded (3).png" alt="" srcset="" />
                     <img  className='mix-blend-luminosity'src="/rounded (4).png" alt="" srcset="" />
@@ -81,11 +81,11 @@ const Home = ()=>{
                     <img className='mix-blend-luminosity' src="/netflix.png" alt="" srcset="" />
                 </div>
             </div>
-            <div className='flex bg-white justify-center items-center px-[160px] relative'>
+            <div className='flex-col sm:flex bg-white justify-center items-center px-[50px] sm:px-[160px] relative'>
                 <div>
-                    <p className='text-[#4361EE] text-[19px] font-medium tracking-wider pb-[30px]'> WHO ARE WE</p>
-                    <h4 className='w-[500px] font-bold text-[39px] text-[#2B2B2B] leading-none'>Assisting individuals in locating the appropriate real estate.</h4>
-                    <p className='text-[#64748B] text-[16px] w-[500px] pt-[30px] pb-[30px]'>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. Nulla convallis ipsum molestie nibh malesuada, ac malesuada leo volutpat.</p>
+                    <p className='text-[#4361EE] text-[16px] sm:text-[19px] font-medium tracking-wider pb-[30px]'> WHO ARE WE</p>
+                    <h4 className=' w-full sm:w-[500px] font-bold text-[20px] sm:text-[39px] text-[#2B2B2B] leading-none'>Assisting individuals in locating the appropriate real estate.</h4>
+                    <p className='text-[#64748B] w-full text-[16px] sm:w-[500px] pt-[30px] pb-[30px]'>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. Nulla convallis ipsum molestie nibh malesuada, ac malesuada leo volutpat.</p>
                     <div className='flex flex-row items-center w-[400px] h-[131px] rounded-[30px] p-[30px] shadow-2xl shadow-white-900/40'>
                         <img src='/iconone.png' />
                         <div className='ml-[15px]'>
@@ -103,12 +103,6 @@ const Home = ()=>{
                 </div>
                 <div className='image1 flex flex-row  '>
                     <div className='image1  '>
-                    {/* <div
-                        style={{
-                            backgroundImage: 'url("/bgimageone.png")',
-                            backgroundSize: 'cover', // Adjust as needed
-                            backgroundRepeat: 'no-repeat', // Adjust as needed
-                        }}></div> */}
                        <div className=' h-[500px] w-[280px] mt-[70px]'><img className="object-cover h-full w-full"  src='/bgimageone.png' /> </div>
                         <img className='absolute bottom-[75%] right-[25%] h-[205px] w-[206px]' src='/round-text.png'/>
                     </div>

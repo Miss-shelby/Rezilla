@@ -12,4 +12,7 @@
     animation: slideRight 20s linear infinite;
     overflow: hidden; 
   }
+  *{
+    border:1px solid green;
+}
   
